@@ -1,0 +1,7 @@
+app-footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  /* height: 20px; */
+}

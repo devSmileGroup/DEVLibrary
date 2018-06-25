@@ -1,0 +1,12 @@
+page-footer {
+  /* background-color: #A268FF; */
+  /* display: flex; */
+  /* min-height: 100vh; */
+  flex-direction: column;
+  position: relative;
+  top: 0%;
+}
+
+main {
+  flex: 1 0 auto;
+}
