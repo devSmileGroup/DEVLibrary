@@ -1,12 +1,28 @@
-page-footer {
-  /* background-color: #A268FF; */
-  /* display: flex; */
-  /* min-height: 100vh; */
-  flex-direction: column;
-  position: relative;
-  top: 0%;
+.footer-copyright {
+  height: 50px;
 }
 
-main {
-  flex: 1 0 auto;
+#logo {
+  padding-left: 82%
+  /* margin-block-end: 100 */
+}
+
+.container {
+  width: 100%
+}
+
+.row {
+  width: 100%
+}
+
+#contactus {
+  padding-left: 40%
+}
+
+/* .page-footer {
+  padding-top: 0
+} */
+
+i {
+  padding-right: 10px;
 }
