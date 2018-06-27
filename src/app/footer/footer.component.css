@@ -2,26 +2,18 @@
   height: 50px;
 }
 
-#logo {
-  padding-left: 82%
-  /* margin-block-end: 100 */
+img {
+  margin-right: 16.77;
+  margin-left: 16.77%;
 }
 
 .container {
-  width: 100%
+  width: 100%;
 }
 
 .row {
   width: 100%
 }
-
-#contactus {
-  padding-left: 40%
-}
-
-/* .page-footer {
-  padding-top: 0
-} */
 
 i {
   padding-right: 10px;
