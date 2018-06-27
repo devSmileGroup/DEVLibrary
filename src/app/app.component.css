@@ -1,0 +1,27 @@
+app-footer {
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  /* height: 70px; */
+}
+
+.text {
+  padding-top: 6%;
+}
+
+app-header {
+  position: fixed;
+  /* bottom: 0%; */
+  width: 100%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+app-categories {
+  position: relative;
+  padding-top: 200px;
+  width: 20%;
+  /* align-content: left; */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  /* padding-top: ; */
+}

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery'
 
+declare var $: any;
 
 @Component({
   selector: 'app-header',
@@ -9,14 +11,11 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   constructor() {
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.dropdown-trigger');
-      var options = {}
-      var instances = M.Dropdown.init(elems, options);
-    });
+
   }
 
   ngOnInit() {
+    $(".dropdown-trigger").dropdown();
   }
 
 }
