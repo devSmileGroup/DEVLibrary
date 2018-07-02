@@ -1,0 +1,55 @@
+<div class="row container">
+  <div class="col s12 z-depth-4 card-panel">
+    <form (submit)="onSubmit()" class="login-form center">
+
+      <div class="row">
+        <h1>Sign in now!</h1>
+      </div>
+
+      <div *ngIf="errorMessage">
+        <div class="card-panel red darken-1" role="alert">
+          <span class="white-text">{{errorMessage}}</span>
+        </div>
+      </div>
+
+      <div class="row margin">
+        <div class='input-field col s12'>
+          <i class="material-icons prefix">person_outline</i>
+          <input
+            [(ngModel)]="user.email"
+            class="validate"
+            type="email"
+            name="email"
+            id="email"
+            required />
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+      <div class="row margin">
+        <div class='input-field col m12'>
+          <i class="material-icons prefix">lock_outline</i>
+          <input
+            [(ngModel)]="user.password"
+            class="validate"
+            type="password"
+            name="password"
+            id="password"
+            required />
+          <label for='password'>Password</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <button type="submit" class="btn waves-effect waves-light col s12">Login</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <a [routerLink]="['/register']">Create account</a>
+      </div>
+
+    </form>
+  </div>
+</div>

@@ -2,18 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
-import * as $ from 'jquery';
-import { LogOut } from '../store/actions/auth.actions';
-import { AppState } from '../store/app.states';
-
-declare var $: any;
+import { AppState, AuthState } from '../store/app.states';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-homepage',
+  templateUrl: './homepage.component.html',
+  styleUrls: ['./homepage.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HomepageComponent implements OnInit {
 
   getState: Observable<any>;
   isAuthenticated: false;
@@ -21,20 +17,15 @@ export class HeaderComponent implements OnInit {
   errorMessage = null;
 
   constructor(private store: Store<AppState>) {
-
+    this.getState = this.store.select(AuthState);
   }
 
   ngOnInit() {
-    $('.dropdown-trigger').dropdown();
     this.getState.subscribe((state) => {
       this.isAuthenticated = state.isAuthenticated;
       this.user = state.user;
       this.errorMessage = state.errorMessage;
     });
-  }
-
-  logOut(): void {
-    this.store.dispatch(new LogOut);
   }
 
 }

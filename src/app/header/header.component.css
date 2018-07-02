@@ -11,7 +11,7 @@
 }
 
 .input-field input[type=search]:focus:not(.browser-default) {
-  background-color: #50F2E3;
+  background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid #00897b;
   border-radius: 20px;
 }
@@ -24,6 +24,15 @@
 }
 
 input {
+  text-indent: 15px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   color: #ffffff;
+}
+
+
+input[type=search]:not(.browser-default){
+  border-bottom: 0px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  font-size: 20px;
 }
