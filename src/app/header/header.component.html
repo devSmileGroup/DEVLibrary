@@ -12,14 +12,14 @@
   </li>
 </ul>
 
-<nav class="#26a69a teal lighten-1">
+<nav class="teal lighten-1">
   <!-- <div class="container"> -->
   <div class="row">
-    <div class="col l2 ">
-      <img id=logo height="60" src="../../assets/img/logo2.png">
+    <div class="col l2">
+      <a routerLink="/"><img id=logo height="60" src="../../assets/img/logo2.png"></a>
     </div>
 
-    <div class="col l8  ">
+    <div class="col l8">
       <form>
         <div class="input-field ">
           <input id="search" type="search" required>
@@ -34,12 +34,16 @@
     <div class="col l2 ">
       <ul class="right hide-on-med-and-down">
 
+        <li *ngIf="!isAuthenticated"><a routerLink="/login">Login</a></li>
+        <li *ngIf="!isAuthenticated"><a routerLink="/register">Sign Up</a></li>
+
         <!-- Dropdown Trigger -->
-        <li>
+        <li *ngIf="isAuthenticated">
           <a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown
             <i class="material-icons right">arrow_drop_down</i>
           </a>
         </li>
+
       </ul>
     </div>
   </div>
