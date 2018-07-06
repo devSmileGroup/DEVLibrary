@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { HTTP_INTERCEPTORS} from '@angular/common/http';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AuthService } from './services/auth.service';
 import { ErrorInterceptor, TokenInterceptor } from './services/token.interceptor';
@@ -21,6 +21,11 @@ import { RegistrationComponent } from './registration/registration.component';
 import { CategoriesComponent } from './categories/categories.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { CardComponent } from './card/card.component';
+import { CardsFormComponent } from './cards-form/cards-form.component';
+import { cardsReducer } from './redux/cards.reducer';
+import { CardsService } from './cards.service'
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -30,13 +35,17 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     LoginComponent,
     RegistrationComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    CardComponent,
+    CardsFormComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    HttpModule,
     StoreModule.forRoot(reducers, {}),
+    StoreModule.forRoot({ cardPage: cardsReducer }),
     EffectsModule.forRoot([AuthEffects]),
     AppRoutingModule
   ],
@@ -51,6 +60,8 @@ import { AppRoutingModule } from './app-routing.module';
       useClass: ErrorInterceptor,
       multi: true
     },
+    CardsService
+
   ],
   bootstrap: [AppComponent]
 })

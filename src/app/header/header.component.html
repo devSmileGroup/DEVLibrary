@@ -16,7 +16,9 @@
   <!-- <div class="container"> -->
   <div class="row">
     <div class="col l2">
-      <a routerLink="/"><img id=logo height="60" src="../../assets/img/logo2.png"></a>
+      <a routerLink="/">
+        <img id=logo height="60" src="../../assets/img/logo2.png">
+      </a>
     </div>
 
     <div class="col l8">
@@ -34,8 +36,12 @@
     <div class="col l2 ">
       <ul class="right hide-on-med-and-down">
 
-        <li *ngIf="!isAuthenticated"><a routerLink="/login">Login</a></li>
-        <li *ngIf="!isAuthenticated"><a routerLink="/register">Sign Up</a></li>
+        <li *ngIf="!isAuthenticated">
+          <a routerLink="/login">Login</a>
+        </li>
+        <li *ngIf="!isAuthenticated">
+          <a routerLink="/register">Sign Up</a>
+        </li>
 
         <!-- Dropdown Trigger -->
         <li *ngIf="isAuthenticated">

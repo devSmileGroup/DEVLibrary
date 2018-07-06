@@ -1,0 +1,40 @@
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input [(ngModel)]="cardTitle" [ngModelOptions]="{standalone: true}" id="title-field" type="text">
+        <label for="title-field">Title</label>
+      </div>
+      <div class="input-field col s5">
+        <input [(ngModel)]="cardGenre" [ngModelOptions]="{standalone: true}" id="genre-field" type="text">
+        <label for="genre-field">Genre</label>
+      </div>
+      <div class="input-field col s1">
+        <input [(ngModel)]="cardCount" [ngModelOptions]="{standalone: true}" id="con-field" type="text">
+        <label for="count-field">Count</label>
+      </div>
+      <div class="input-field col s6">
+        <input [(ngModel)]="cardAuthor" [ngModelOptions]="{standalone: true}" id="author-field" type="text">
+        <label for="author-field">Author</label>
+      </div>
+      <div class="input-field col s6">
+        <input [(ngModel)]="cardImage" [ngModelOptions]="{standalone: true}" id="image-field" type="text">
+        <label for="image-field">Image URL</label>
+      </div>
+      <div class="input-field col s6">
+        <input [(ngModel)]="cardDate" [ngModelOptions]="{standalone: true}" id="date-field" type="text">
+        <label for="date-field">Date of publication</label>
+      </div>
+      <div class=" input-field col s6 ">
+        <textarea [(ngModel)]="cardDescription" [ngModelOptions]="{standalone: true}" id="textarea1 " class="materialize-textarea "></textarea>
+        <label for="textarea1 ">Description</label>
+      </div>
+    </div>
+  </form>
+  <button (click)="onAdd()" class="btn waves-effect waves-light" type="submit" name="action">Add
+    <i class="material-icons right">add</i>
+  </button>
+  <!-- <button (click)="onLoad()" class="btn waves-effect waves-light" type="submit" name="action">Load
+    <i class="material-icons right">arrow_downward</i>
+  </button> -->
+</div>
