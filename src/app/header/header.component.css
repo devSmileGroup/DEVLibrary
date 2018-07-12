@@ -35,3 +35,7 @@ input[type=search]:not(.browser-default) {
   border-radius: 20px;
   font-size: 20px;
 }
+
+.label-icon {
+  cursor: pointer
+}

@@ -24,11 +24,14 @@
     <div class="col l8">
       <form>
         <div class="input-field ">
-          <input id="search" type="search" required>
+          <input (keyup)="onKey($event)" [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}" id="searchText" type="search"
+            required>
           <label class="label-icon" for="search">
-            <i class="material-icons">search</i>
+            <!-- <button (click)=searchCard() class=" btn-small"> -->
+            <i (click)=searchCard() class="material-icons">search</i>
+            <!-- </button> -->
           </label>
-          <i class="material-icons">close</i>
+          <i (click)=clearInput() class="material-icons">close</i>
         </div>
       </form>
     </div>

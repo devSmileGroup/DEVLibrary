@@ -1,10 +1,10 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
-import * as $ from 'jquery'
-import { shallowEqual } from '@angular/router/src/utils/collection';
-import { Card } from '../card.model'
+// import * as $ from 'jquery'
+// import { shallowEqual } from '@angular/router/src/utils/collection';
+// import { Card } from '../card.model'
 import { Store } from '@ngrx/store';
-import { AppState } from '../store/app.states';
-import { FilterCards, LoadCards } from '../redux/cards.action';
+import { ApppState } from '../redux/app.state';
+import { FilterCards } from '../redux/cards.action';
 import { CardsService } from '../cards.service';
 
 declare var $: any;
@@ -20,8 +20,9 @@ export class CategoriesComponent implements OnInit {
   // @Input() card: Card
 
 
-  constructor(private store: Store<AppState>, private service: CardsService) {
+  constructor(private store: Store<ApppState>, private service: CardsService) {
     // $('.sidenav-toggle').sideNav();
+
   }
 
   ngOnInit() {
@@ -29,21 +30,24 @@ export class CategoriesComponent implements OnInit {
     //   $('.sidenav-toggle').sideNav();
     // });
 
+
   }
 
-  changeColor(a) {
-    var i = 0
-    var item = document.getElementsByClassName("collapsible-header")
-    while (i < item.length) {
-      if (item[i].textContent === a) {
-        if (item[i].style.backgroundColor == "rgb(38, 166, 154)") { item[i].style.backgroundColor = "#ffffff"; this.service.loadCards() }
-        else { item[i].style.backgroundColor = "#26a69a"; this.store.dispatch(new FilterCards(a)) }
-      } i++;
-    }
-  }
+  // changeColor(a) {
+  //   var i = 0
+
+  //   var item = document.getElementsByClassName("collapsible-header")
+  //   while (i < item.length) {
+  //     if (item[i].textContent === a) {
+  //       if (item[i].style.backgroundColor == "rgb(38, 166, 154)") { item[i].style.backgroundColor = "#ffffff"; this.service.loadCards() }
+  //       else { item[i].style.backgroundColor = "#26a69a"; this.store.dispatch(new FilterCards(a)) }
+  //     } i++;
+  //   }
+  // }
 
   showOnly(a) {
-    this.changeColor(a);
+    console.log(a)
+    // this.changeColor(a);
 
   }
 }

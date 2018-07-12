@@ -40,6 +40,12 @@ export function cardsReducer(state = initialState, action: CarsAction) {
                 cards: [...state.cards.filter(c => c.genre == action.payload)]
             }
 
+        // case CARD_ACTION.SEARCH_CARDS:
+        //     return {
+        //         ...state,
+        //         cards: [...state.cards.filter(c => ((c.title).search(action.payload)) !== -1)]
+        //     }
+
         default:
             return state
 

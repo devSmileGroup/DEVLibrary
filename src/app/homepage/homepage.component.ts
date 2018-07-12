@@ -28,6 +28,7 @@ export class HomepageComponent implements OnInit {
     console.log("showModal")
   }
 
+
   ngOnInit() {
 
     this.service.loadCards()

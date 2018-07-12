@@ -7,6 +7,7 @@ export namespace CARD_ACTION {
     export const UPDATE_CARD = 'UPDATE_CARD'
     export const LOAD_CARDS = 'LOAD_CARDS'
     export const FILTER_CARDS = 'FILTER_CARDS'
+    // export const SEARCH_CARDS = 'SEARCH_CARDS'
 }
 
 export class AddCard implements Action {
@@ -38,7 +39,12 @@ export class FilterCards implements Action {
 
     constructor(public payload) { }
 }
+// export class SearchCard implements Action {
+//     readonly type = CARD_ACTION.SEARCH_CARDS
+
+//     constructor(public payload) { }
+// }
 
 
 
-export type CarsAction = AddCard | DeleteCard | UpdateCard | LoadCards | FilterCards
+export type CarsAction = AddCard | DeleteCard | UpdateCard | LoadCards | FilterCards 

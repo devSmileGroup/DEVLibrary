@@ -24,6 +24,17 @@ export class CardsService {
 
     }
 
+    searchCard(input: string): void {
+
+        this.http.get(CardsService.BASE_URL + 'cards')
+            .pipe(map((response: Response) => response.json()))
+            .toPromise()
+            .then((cards: Card[]) => {
+                let nCards = cards.filter(c => ((c.title.toLowerCase()).search(input.toLowerCase())) !== -1)
+                this.store.dispatch(new LoadCards(nCards))
+            })
+
+    }
     // filterCards(category): void {
 
     //     this.http.get(CardsService.BASE_URL + 'cards')
