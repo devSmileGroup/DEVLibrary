@@ -29,10 +29,13 @@ input {
   color: #ffffff;
 }
 
-
-input[type=search]:not(.browser-default){
+input[type=search]:not(.browser-default) {
   border-bottom: 0px solid #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   font-size: 20px;
+}
+
+.label-icon {
+  cursor: pointer
 }

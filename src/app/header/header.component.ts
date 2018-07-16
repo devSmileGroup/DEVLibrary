@@ -1,12 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
-
-import * as $ from 'jquery';
-import { LogOut } from '../store/actions/auth.actions';
-import { AppState } from '../store/app.states';
-
-declare var $: any;
+import { CardsService } from '../cards.service';
+import { CardPageComponent } from '../card-page/card-page.component'
 
 @Component({
   selector: 'app-header',
@@ -15,26 +9,28 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit {
 
-  getState: Observable<any>;
-  isAuthenticated: false;
-  user = null;
-  errorMessage = null;
+  public searchText: string
 
-  constructor(private store: Store<AppState>) {
-
+  constructor(private service: CardsService) {
   }
 
   ngOnInit() {
-    $('.dropdown-trigger').dropdown();
-    this.getState.subscribe((state) => {
-      this.isAuthenticated = state.isAuthenticated;
-      this.user = state.user;
-      this.errorMessage = state.errorMessage;
-    });
   }
 
-  logOut(): void {
-    this.store.dispatch(new LogOut);
+  onKey(event: any) {
+    this.searchCard()
   }
 
+  clearInput() {
+    this.searchText = ""
+    this.service.paginationCard("", 0)
+  }
+
+  searchCard() {
+    if (this.searchText === ('' || ' ')) { this.service.paginationCard("", 0).then((len) => { }) }
+    else {
+      this.service.paginationCard(this.searchText, 0).then((len) => { })
+    }
+
+  }
 }

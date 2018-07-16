@@ -1,0 +1,180 @@
+{
+  "cards": [
+    {
+      "title": "Harry Potter",
+      "genre": "Fantasy ",
+      "author": "J. K. Rowling ",
+      "date": "26 June 1997 ",
+      "image": "http://img.timeinc.net/time/2007/harry_potter/hp_books/sorce_stone.jpg ",
+      "description": "The central character in the series is Harry Potter, a boy who lives in Surrey with his aunt, uncle, and cousin - the Dursleys - who discovers, at the age of eleven, that he is a wizard, though he lives in the ordinary world of non-magical people known as Muggles.[8] The wizarding world exists parallel to the Muggle world, albeit hidden and in secrecy. His magical ability is inborn and children with such abilities are invited to attend exclusive magic schools that teach the necessary skills to succeed in the wizarding world.[9] Harry becomes a student at Hogwarts School of Witchcraft and Wizardry, a wizarding academy in Scotland and it is here where most of the events in the series take place. As Harry develops through his adolescence, he learns to overcome the problems that face him: magical, social and emotional, including ordinary teenage challenges such as friendships, infatuation, romantic relationships, schoolwork and exams, anxiety, depression, stress, and the greater test of preparing himself for the confrontation that lies ahead in wizarding Britains increasingly-violent second wizarding war. ",
+      "count": 10,
+      "id": 4,
+      "isSold": false
+    },
+    {
+      "title": "The God Delusion",
+      "genre": "Science",
+      "author": "Richard Dawkins",
+      "date": "2 October 2006",
+      "image": "http://tse4.mm.bing.net/th?id=OIP.U8K6Eb_HWg_kc_rxopt1YQHaLW&pid=15.1%22,%22md5%22:%2253c2ba11bfc75a0fe473faf1a29b7561",
+      "description": "Dawkins has argued against creationist explanations of life in his previous works on evolution. The theme of The Blind Watchmaker, published in 1986, is that evolution can explain the apparent design in nature. In The God Delusion he focuses directly on a wider range of arguments used for and against belief in the existence of a god (or gods).\n\nDawkins identifies himself repeatedly as an atheist, while also pointing out that, in a sense, he is also agnostic, though \"only to the extent that I am agnostic about fairies at the bottom of the garden\".[8]",
+      "count": 22,
+      "isSold": false,
+      "id": 5
+    },
+    {
+      "title": "I, Robot",
+      "genre": "Science",
+      "author": "Isaac Asimov",
+      "date": "December 2, 1950",
+      "image": "https://www.srf.ch/var/storage/images/_aliases/640w/auftritte/kultur/bilder/2015/01/20/node_5989438/76774318-2-ger-DE/image.jpg",
+      "description": "The New York Times described I, Robot as \"an exciting science thriller [which] could be fun for those whose nerves are not already made raw by the potentialities of the atomic age.\"[1] Describing it as \"continuously fascinating\", Groff Conklin \"Unreservedly recommended\" the book.[2] P. Schuyler Miller recommended the collection \"For puzzle situations, for humor, for warm character, [and] for most of the values of plain good writing\".[3]",
+      "count": "33",
+      "isSold": false,
+      "id": 6
+    },
+    {
+      "title": "The Immeasurable World",
+      "genre": "Science",
+      "author": "William Atkins",
+      "date": "June 5th 2018",
+      "image": "https://images.gr-assets.com/books/1529321465l/36203121.jpg",
+      "description": "For all the desert's dreamlike beauty, to travel here was not just to pitch yourself into oblivion: it was to grind away at yourself until nothing was left. It was to aspire to the condition of sand. ",
+      "count": "3",
+      "isSold": false,
+      "id": 7
+    },
+    {
+      "title": "Amity and Prosperity",
+      "genre": "Fantasy",
+      "author": "Chloe Benjamin",
+      "date": "January 9th 2018",
+      "image": "https://images.gr-assets.com/books/1493015963l/30288282.jpg",
+      "description": "s",
+      "count": "4",
+      "isSold": false,
+      "id": 8
+    },
+    {
+      "title": "War Storm",
+      "genre": "Fantasy",
+      "author": "Victoria Aveyard",
+      "date": " May 15th 2018",
+      "image": "https://images.gr-assets.com/books/1510773212l/27188596.jpg",
+      "description": "s",
+      "count": 3,
+      "isSold": false,
+      "id": 9
+    },
+    {
+      "title": "City of Bastards",
+      "genre": "Fantasy",
+      "author": " Andrew Shvarts",
+      "date": "June 5th 2018",
+      "image": "https://images.gr-assets.com/books/1504225210l/35843874.jpg",
+      "description": "s",
+      "count": "4",
+      "isSold": false,
+      "id": 10
+    },
+    {
+      "title": "Amity and Prosperity",
+      "genre": "History",
+      "author": " Eliza Griswold",
+      "date": "June 12th 2018 ",
+      "image": "https://images.gr-assets.com/books/1518912372l/36722972.jpg",
+      "description": "s",
+      "count": "44",
+      "isSold": false,
+      "id": 11
+    },
+    {
+      "title": "To Kill a Kingdom",
+      "genre": "Fantasy",
+      "author": " Alexandra Christo",
+      "date": " March 6th 2018",
+      "image": "https://images.gr-assets.com/books/1524322945l/34499221.jpg",
+      "description": "s",
+      "count": "3",
+      "isSold": false,
+      "id": 12
+    },
+    {
+      "title": "The Outsider",
+      "genre": "Horror",
+      "author": "Stephen King",
+      "date": "May 22nd 2018",
+      "image": "https://images.gr-assets.com/books/1524596540l/36124936.jpg",
+      "description": "s",
+      "count": "42",
+      "isSold": false,
+      "id": 13
+    },
+    {
+      "title": "Educated: A Memoir",
+      "genre": "Biography",
+      "author": " Tara Westover",
+      "date": "February 20th 2018",
+      "image": "https://images.gr-assets.com/books/1506026635l/35133922.jpg",
+      "description": "s",
+      "count": "31",
+      "isSold": false,
+      "id": 14
+    },
+    {
+      "title": "In a Dark, Dark Wood",
+      "genre": "Fiction",
+      "author": " Ruth Ware",
+      "date": " April 19th 2016 ",
+      "image": "https://images.gr-assets.com/books/1523543089l/27834600.jpg",
+      "description": "s",
+      "count": "12",
+      "isSold": false,
+      "id": 15
+    },
+    {
+      "title": "Bring Me Back",
+      "genre": "Suspense",
+      "author": " B.A. Paris",
+      "date": "June 19th 2018",
+      "image": "https://images.gr-assets.com/books/1508949859l/36448554.jpg",
+      "description": "s",
+      "count": "13",
+      "isSold": false,
+      "id": 16
+    },
+    {
+      "title": "Hellboy Omnibus Volume",
+      "genre": "Horror",
+      "author": " Mike Mignola",
+      "date": "June 5th 2018",
+      "image": "https://images.gr-assets.com/books/1506172579l/36290217.jpg",
+      "description": "loo",
+      "count": 5,
+      "isSold": false,
+      "id": 17
+    },
+    {
+      "title": "Yakusoku no Neverland 9",
+      "genre": "Comics",
+      "author": "Kaiu Shirai,  Posuka Demizu",
+      "date": "June 4th 2018",
+      "image": "https://images.gr-assets.com/books/1527722915l/38738367.jpg",
+      "description": "asd",
+      "count": 5,
+      "isSold": false,
+      "id": 18
+    },
+    {
+      "title": "It",
+      "genre": "Thriller",
+      "author": "Stephen King",
+      "date": " October 1st 1987",
+      "image": "https://images.gr-assets.com/books/1334416842l/830502.jpg",
+      "description": "sad",
+      "count": "10",
+      "isSold": false,
+      "id": 19
+    }
+  ]
+}

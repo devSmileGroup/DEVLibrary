@@ -1,1 +1,27 @@
-<app-footer></app-footer>
+<div id="cards">
+  <div id="modalCard" class="modal">
+    <app-cards-form></app-cards-form>
+  </div>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>sdasd</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s2">
+      <app-categories></app-categories>
+    </div>
+    <!-- <div class="col s10">
+      <app-card class="col s6 m4 l3" [card]='c' *ngFor="let c of (cardState | async).cards">
+      </app-card>
+    </div> -->
+    <app-card-page></app-card-page>
+  </div>
+
+  <app-footer></app-footer>

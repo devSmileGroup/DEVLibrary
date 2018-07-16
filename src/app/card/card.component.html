@@ -1,0 +1,27 @@
+<div class="row" [ngClass]="{'list-group-item-danger': card.isSold}">
+  <div class="col ">
+    <div class="card">
+      <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+      <!-- <button (click)="showModal()" class=" waves-effect waves-light btn-small ">view</button> -->
+
+
+      <div class="card-image">
+        <img height="400" src={{card.image}}>
+        <span class="badge teal lighten-1">{{card.count}}</span>
+        <!-- <span class="card-title"></span> -->
+        <!-- <a class="btn-floating halfway-fab waves-effect waves-light red">
+          <i class="material-icons">add</i>
+        </a> -->
+      </div>
+      <div class="card-content">
+        <p>{{card.title}}</p>
+        <p>{{card.author}}</p>
+        <p>{{card.genre}}</p>
+        <p>{{card.date}}</p>
+        <button (click)="onAddCard()" [disabled]="card.isSold" class="waves-effect waves-light btn-small">Add</button>
+        <button (click)="onBackCard()" class="waves-effect waves-light btn-small">Back</button>
+        <button (click)="onDelete()" class=" waves-effect waves-light btn-small ">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
