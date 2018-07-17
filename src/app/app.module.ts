@@ -3,24 +3,27 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
-import { EffectsModule } from '@ngrx/effects';
-import { HTTP_INTERCEPTORS} from '@angular/common/http';
 
-import { AuthService } from './services/auth.service';
-import { ErrorInterceptor, TokenInterceptor } from './services/token.interceptor';
-
-import { AuthEffects } from './store/effects/auth.effects';
-import { reducers } from './store/app.states';
+// import { reducers } from './store/app.states';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
-import { RegistrationComponent } from './registration/registration.component';
-import { CategoriesComponent } from './categories/categories.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegistrationComponent } from './components/registration/registration.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { CardComponent } from './components/card/card.component';
+import { CardsFormComponent } from './components/cards-form/cards-form.component';
+import { cardsReducer } from './redux/redusers/cards.reducer';
+import { CardsService } from './servises/cards.service'
+import { HttpModule } from '@angular/http';
+import { CardPageComponent } from './components/card-page/card-page.component';
+import { CategoryComponent } from './components/category/category.component';
+import { categoriesReducer } from './redux/redusers/category.reducers';
+import { CategoriesService } from './servises/category.service';
 
 @NgModule({
   declarations: [
@@ -30,27 +33,23 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     LoginComponent,
     RegistrationComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    CardComponent,
+    CardsFormComponent,
+    CardPageComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    StoreModule.forRoot(reducers, {}),
-    EffectsModule.forRoot([AuthEffects]),
+    HttpModule,
+    StoreModule.forRoot({ categoryPage: categoriesReducer, cardPage: cardsReducer }),
     AppRoutingModule
   ],
-  providers: [AuthService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: TokenInterceptor,
-      multi: true
-    },
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: ErrorInterceptor,
-      multi: true
-    },
+  providers: [
+    CardsService,
+    CategoriesService
   ],
   bootstrap: [AppComponent]
 })

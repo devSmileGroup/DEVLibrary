@@ -1,0 +1,37 @@
+<div class="col s10">
+  <app-card class="col s6 m4 l3" [card]='c' *ngFor="let c of (cardState | async).cards">
+  </app-card>
+</div>
+<ul class="pagination col s4 offset-s4">
+  <li class={{classLeft}}>
+    <a href="#!">
+      <i (click)=backStateNumber() class="material-icons">chevron_left</i>
+    </a>
+  </li>
+  <li (click)=nextPage(0) class={{classActive[0]}}>
+    <a href="#!">{{pageNumber[0]}}</a>
+  </li>
+  <li (click)=nextPage(1) class={{classActive[1]}}>
+    <a href="#!">{{pageNumber[1]}}</a>
+  </li>
+  <li (click)=nextPage(2) class={{classActive[2]}}>
+    <a href="#!">{{pageNumber[2]}}</a>
+  </li>
+  <li (click)=nextPage(3) class={{classActive[3]}}>
+    <a href="#!">{{pageNumber[3]}}</a>
+  </li>
+  <li (click)=nextPage(4) class={{classActive[4]}}>
+    <a href="#!">{{pageNumber[4]}}</a>
+  </li>
+  <li (click)=nextPage(5) class={{classActive[5]}}>
+    <a href="#!">{{pageNumber[5]}}</a>
+  </li>
+  <li (click)=nextPage(6) class={{classActive[6]}}>
+    <a href="#!">{{pageNumber[6]}}</a>
+  </li>
+  <li class="waves-effect">
+    <a href="#!">
+      <i (click)=addStateNumber() class="material-icons">chevron_right</i>
+    </a>
+  </li>
+</ul>

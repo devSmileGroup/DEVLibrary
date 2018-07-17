@@ -1,0 +1,31 @@
+<ul class="collapsible ">
+  <li class="active">
+    <app-category [category]='c' *ngFor="let c of (categoryState | async).categories"></app-category>
+  </li>
+  <a class="waves-effect waves-light btn modal-trigger" href="#modalCard">Card
+    <i class="material-icons right">add</i>
+  </a>
+  <!-- <button (click)="onAdd()" class="btn waves-effect waves-light" type="submit" name="action">Category
+    <i class="material-icons right">add</i>
+  </button> -->
+
+</ul>
+
+<div>
+  <div class="conteiner">
+    <div class="input-field col s12">
+      <input [(ngModel)]="categoryName" id="category-name" type="text">
+      <label for="category-name">Category name</label>
+    </div>
+    <button (click)="OnAddCategory()" class="waves-effect waves-light btn right" name="action">
+      Add Category
+      <i class="material-icons right">add</i>
+    </button>
+  </div>
+</div>
+<!-- <div class="collection">
+  <a href="#!" (click)="show('')" class="collection-item">Alvin</a>
+  <a href="#!" class="collection-item active">Alvin</a>
+  <a href="#!" class="collection-item">Alvin</a>
+  <a href="#!" class="collection-item">Alvin</a>
+</div> -->

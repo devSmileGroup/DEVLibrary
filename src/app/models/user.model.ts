@@ -1,6 +1,11 @@
 export class User {
-  id?: string;
-  email?: string;
-  password?: string;
-  token?: string;
+    constructor(
+        public name: string,
+        public id: number,
+        public email: string,
+        private password: string,
+        public books: [{}],
+        public status: string,
+        public token: string
+    ) { }
 }
